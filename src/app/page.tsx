@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, BrainCircuit, Lightbulb, PenTool } from 'lucide-react';
+import { ArrowRight, BrainCircuit, Lightbulb, MessageSquare } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             A Passionate Scholar and Innovator
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Welcome to my digital portfolio. I am a prospective graduate student with a deep interest in [Your Field 1], [Your Field 2], and [Your Field 3]. Explore my work, research, and teaching journey.
+            Welcome to my digital portfolio. I am a prospective graduate student with a deep interest in Machine Learning, Natural Language Processing, and Human-Computer Interaction. Explore my work, research, and teaching journey.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild size="lg">
@@ -57,23 +57,23 @@ export default function Home() {
             <Card className="text-center">
               <CardHeader>
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary-foreground">
+                  <MessageSquare className="h-6 w-6 text-secondary" />
+                </div>
+                <CardTitle className="font-headline mt-4">Natural Language Processing</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Exploring the intersection of language and computer science to understand and process human language.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary-foreground">
                   <Lightbulb className="h-6 w-6 text-secondary" />
                 </div>
                 <CardTitle className="font-headline mt-4">Human-Computer Interaction</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Passionate about designing intuitive and effective interfaces between humans and technology.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center">
-              <CardHeader>
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary-foreground">
-                  <PenTool className="h-6 w-6 text-secondary" />
-                </div>
-                <CardTitle className="font-headline mt-4">Computational Linguistics</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Exploring the intersection of language and computer science to understand and process human language.</p>
               </CardContent>
             </Card>
           </div>
