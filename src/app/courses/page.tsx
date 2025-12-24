@@ -29,15 +29,6 @@ const allSyllabiLink = "#"; // Replace with the actual link to the combined PDF
 export default function CoursesPage() {
   return (
     <div className="container mx-auto max-w-5xl px-4 py-12">
-      <header className="mb-12 text-center">
-        <h1 className="font-headline text-4xl font-bold md:text-5xl">
-          Related Coursework
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          A summary of the key courses that have shaped my academic journey.
-        </p>
-      </header>
-
       <section id="course-list" className="mb-16">
         <h2 className="font-headline mb-8 text-center text-3xl font-semibold">
           Completed Courses
