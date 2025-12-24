@@ -17,6 +17,7 @@ const courses = [
   },
   {
     title: "Machine Learning",
+    info: 'Official course name: "Topics in Computer Science"'
   },
   {
     title: "Natural Language Processing",
@@ -43,8 +44,9 @@ export default function CoursesPage() {
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course, index) => (
-            <Card key={index} className="flex items-center justify-center p-6 text-center">
+            <Card key={index} className="flex flex-col items-center justify-center p-6 text-center">
                 <h3 className="font-semibold">{course.title}</h3>
+                {course.info && <p className="text-sm text-muted-foreground mt-2">{course.info}</p>}
             </Card>
           ))}
         </div>
