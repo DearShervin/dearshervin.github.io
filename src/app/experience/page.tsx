@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, Calendar } from "lucide-react";
+import { Download, Users, Calendar, Briefcase } from "lucide-react";
 
 const researchPapers = [
   {
@@ -43,6 +43,15 @@ const teachingExperiences = [
         duration: "March 2022",
         description: "Delivered a guest lecture on the practical applications of graph algorithms in social network analysis and logistics."
     }
+];
+
+const workExperiences = [
+    {
+        role: "Software Engineer Intern",
+        company: "Tech Giant",
+        duration: "Summer 2023",
+        description: "Developed and implemented a new feature for a large-scale data processing pipeline, improving efficiency by 15%. Collaborated with a cross-functional team in an agile environment."
+    }
 ]
 
 export default function ExperiencePage() {
@@ -57,9 +66,9 @@ export default function ExperiencePage() {
         </p>
       </header>
 
-      <section id="publications">
+      <section id="research">
         <h2 className="font-headline text-3xl font-semibold mb-8">
-          Publications
+          Research
         </h2>
         <div className="space-y-8">
           {researchPapers.map((paper, index) => (
@@ -91,6 +100,26 @@ export default function ExperiencePage() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section id="work-internship" className="mt-16">
+        <h2 className="font-headline text-3xl font-semibold mb-8">
+            Work and Internship
+        </h2>
+        <div className="space-y-8">
+            {workExperiences.map((exp, index) => (
+                <Card key={index} className="flex flex-col md:flex-row">
+                    <div className="p-6 md:w-1/3 md:border-r">
+                        <h3 className="font-headline text-xl font-semibold">{exp.role}</h3>
+                        <p className="font-medium text-primary-foreground/80">{exp.company}</p>
+                        <p className="text-sm text-muted-foreground">{exp.duration}</p>
+                    </div>
+                    <div className="p-6 pt-0 md:pt-6 md:w-2/3">
+                        <p className="leading-relaxed">{exp.description}</p>
+                    </div>
+                </Card>
+            ))}
         </div>
       </section>
 
