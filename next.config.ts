@@ -2,7 +2,8 @@ import type {NextConfig} from 'next';
 
 const repo = 'studio';
 const assetPrefix = `/${repo}/`;
-const basePath = `/${repo}`;
+const basePath = "/studio"; 
+//`/${repo}`;
 
 const nextConfig: NextConfig = {
   /* config options here */
