@@ -1,11 +1,6 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Download } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Download, BookOpen } from "lucide-react";
 
 const courses = [
   {
@@ -36,44 +31,56 @@ const courses = [
 
 export default function CoursesPage() {
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-12">
+    <div className="container mx-auto max-w-5xl px-4 py-12">
       <header className="mb-12 text-center">
         <h1 className="font-headline text-4xl font-bold md:text-5xl">
-          Related Courses
+          Related Coursework
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
           A summary of the key courses that have shaped my academic journey.
         </p>
       </header>
 
-      <Accordion type="single" collapsible className="w-full">
-        {courses.map((course, index) => (
-          <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger className="text-left hover:no-underline">
-              <div className="flex items-center gap-4">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                    <BookOpen className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <div>
-                    <h3 className="font-headline text-lg font-semibold">
-                      {course.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">{course.code}</p>
-                </div>
+      <section id="course-list" className="mb-16">
+        <h2 className="font-headline mb-8 text-center text-3xl font-semibold">
+          Completed Courses
+        </h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {courses.map((course, index) => (
+            <Card key={index} className="flex items-center p-4">
+              <div className="mr-4 flex-shrink-0">
+                <BookOpen className="h-6 w-6 text-accent" />
               </div>
-            </AccordionTrigger>
-            <AccordionContent className="pl-14">
-              <p className="mb-4 text-muted-foreground">{course.description}</p>
+              <div>
+                <h3 className="font-semibold">{course.title}</h3>
+                <p className="text-sm text-muted-foreground">{course.code}</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section id="syllabus-downloads">
+        <h2 className="font-headline mb-8 text-center text-3xl font-semibold">
+          Syllabus Downloads
+        </h2>
+        <div className="space-y-4">
+          {courses.map((course, index) => (
+            <Card key={index} className="flex items-center justify-between p-4">
+              <div>
+                <h3 className="font-semibold">{course.title}</h3>
+                <p className="text-sm text-muted-foreground">{course.code}</p>
+              </div>
               <Button asChild size="sm">
                 <a href={course.syllabusLink} download>
                   <Download className="mr-2 h-4 w-4" />
-                  Download Syllabus
+                  Download PDF
                 </a>
               </Button>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+            </Card>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
