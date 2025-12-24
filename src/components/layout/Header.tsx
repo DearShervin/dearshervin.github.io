@@ -10,7 +10,7 @@ import { Menu, BookUser } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/research", label: "Research" },
+  { href: "/experience", label: "Experience" },
   { href: "/projects", label: "Projects" },
   { href: "/courses", label: "Courses" },
   { href: "/gallery", label: "Gallery" },

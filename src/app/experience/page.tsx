@@ -45,12 +45,12 @@ const teachingExperiences = [
     }
 ]
 
-export default function ResearchPage() {
+export default function ExperiencePage() {
   return (
     <div className="container mx-auto max-w-5xl px-4 py-12">
       <header className="mb-12 text-center">
         <h1 className="font-headline text-4xl font-bold md:text-5xl">
-          Research & Teaching
+          Experience
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
           My contributions to the academic community through publications and pedagogy.
@@ -85,7 +85,7 @@ export default function ResearchPage() {
                 <Button asChild>
                   <a href={paper.downloadLink} download>
                     <Download className="mr-2 h-4 w-4" />
-                    Download Paper
+                    Download PDF
                   </a>
                 </Button>
               </CardFooter>
