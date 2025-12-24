@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Download } from "lucide-react";
 
 const projects = [
   {
@@ -43,6 +43,19 @@ const projects = [
     imageHint: "whiteboard algorithm"
   },
 ];
+
+const presentations = [
+    {
+        title: "The Role of Attention Mechanisms in NLP",
+        description: "Presented at the International Conference on Computational Linguistics. This talk covered the evolution of attention mechanisms and their impact on models like the Transformer.",
+        downloadLink: "#"
+    },
+    {
+        title: "Ethical Considerations in AI-driven UX",
+        description: "A talk for the HCI seminar series, discussing the ethical responsibilities of designers when creating user experiences powered by artificial intelligence.",
+        downloadLink: "#"
+    }
+]
 
 export default function ProjectsPage() {
   return (
@@ -100,6 +113,32 @@ export default function ProjectsPage() {
           </Card>
         ))}
       </div>
+
+      <section id="presentations" className="mt-16">
+        <h2 className="font-headline mb-8 text-center text-3xl font-semibold">
+          Academic Presentations
+        </h2>
+        <div className="space-y-8">
+          {presentations.map((presentation, index) => (
+            <Card key={index}>
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl">{presentation.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="leading-relaxed">{presentation.description}</p>
+              </CardContent>
+              <CardFooter>
+                <Button asChild>
+                  <a href={presentation.downloadLink} download>
+                    <Download className="mr-2 h-4 w-4" />
+                    Download PDF
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
