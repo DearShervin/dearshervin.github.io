@@ -1,15 +1,9 @@
 import type {NextConfig} from 'next';
 
-const repo = 'studio';
-const assetPrefix = `/${repo}/`;
-const basePath = "/studio"; 
-//`/${repo}`;
-
 const nextConfig: NextConfig = {
-  /* config options here */
   output: 'export',
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  assetPrefix: '/studio/',
+  basePath: '/studio',
   typescript: {
     ignoreBuildErrors: true,
   },
