@@ -21,15 +21,15 @@ export default function Home() {
             />
           </div>
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Hi, I'm [My Name]
+            Hi, I'm Shervin Iranaghideh
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Welcome to my digital portfolio. I am a prospective graduate student with a deep interest in Machine Learning, Natural Language Processing, and Human-Computer Interaction. Explore my work, research, and teaching journey.
+            Welcome to my portfolio. I am an aspiring prospective graduate student and I am highly looking forward to conduct research related to areas of my interest.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild size="lg">
-              <Link href="/projects">
-                Explore My Work <ArrowRight className="ml-2 h-5 w-5" />
+              <Link href="/experience">
+                More About Me <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-headline text-3xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-            I graduated from [Your University] with a degree in [Your Degree]. Throughout my academic career, I've been driven by a curiosity to solve complex problems and a desire to contribute to the academic community. My research focuses on [briefly describe your research focus], and I'm always eager to collaborate on innovative projects. When I'm not in the lab, I enjoy [Your Hobby 1] and [Your Hobby 2].
+            I graduated from Islamic Azad University Science and Research Branch (SRBIAU) with a Bachelor's degree in Computer Science. Throughout my academic career, I've been driven by a curiosity to solve complex problems and a desire to contribute to the academic community. I'm always eager to collaborate on innovative projects.
             </p>
         </div>
       </section>

@@ -11,12 +11,12 @@ const skillCategories = [
   {
     icon: <Laptop className="h-8 w-8 text-accent" />,
     title: "Web Development",
-    skills: ["TypeScript", "Javascript", "HTML", "CSS", "Next.js", "React"],
+    skills: ["TypeScript", "Javascript", "HTML", "CSS", "Next.js", "React", "WordPress", "DNN"],
   },
   {
     icon: <Wrench className="h-8 w-8 text-accent" />,
     title: "Developer Tools",
-    skills: ["Git", "Docker", "Excel", "PowerPoint"],
+    skills: ["Git", "Docker", "Excel", "PowerPoint", "Plesk"],
   },
   {
     icon: <PenTool className="h-8 w-8 text-accent" />,

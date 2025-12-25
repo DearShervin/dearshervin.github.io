@@ -47,11 +47,17 @@ const teachingExperiences = [
 
 const workExperiences = [
     {
-        role: "Software Engineer Intern",
-        company: "Tech Giant",
+        role: "Front-End Developer Intern",
+        company: "ECB.ir",
         duration: "Summer 2023",
         description: "Developed and implemented a new feature for a large-scale data processing pipeline, improving efficiency by 15%. Collaborated with a cross-functional team in an agile environment."
-    }
+    },
+    {
+      role: "Front-End Designer",
+      company: "ECB.ir",
+      duration: "Summer 2024 - Now",
+      description: "Developed and implemented a new feature for a large-scale data processing pipeline, improving efficiency by 15%. Collaborated with a cross-functional team in an agile environment."
+  }
 ]
 
 export default function ExperiencePage() {
@@ -62,7 +68,7 @@ export default function ExperiencePage() {
           Experience
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          My contributions to the academic community through publications and pedagogy.
+          My Teaching, Research and Work experiences.
         </p>
       </header>
 
