@@ -11,7 +11,7 @@ const skillCategories = [
   {
     icon: <Laptop className="h-8 w-8 text-accent" />,
     title: "Web Development",
-    skills: ["Javascript", "HTML", "CSS", "Next.js", "React"],
+    skills: ["TypeScript", "Javascript", "HTML", "CSS", "Next.js", "React"],
   },
   {
     icon: <Wrench className="h-8 w-8 text-accent" />,
