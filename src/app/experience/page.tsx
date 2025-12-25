@@ -64,10 +64,10 @@ const workExperiences = [
         description: "Gained hands-on experience with modern development tools and workflows. Contributed to deploying new features and learned to navigate a professional codebase in an agile environment."
     },
     {
-      role: "Front-End Designer",
+      role: "Front-end Designer",
       company: "ECB.ir",
       duration: "Summer 2024 - Now",
-      description: "Designed and developed user-centric interfaces for diverse web projects, including a high-performance e-commerce site using Next.js and a feature-rich platform with WordPress. Focused on creating responsive, scalable, and intuitive user experiences."
+      description: "Designed and developed user-centric interfaces for diverse web projects, including a high-performance e-commerce site and feature-rich platforms with WordPress and CMS like DNN. Focused on creating responsive, scalable, and intuitive user experiences."
   }
 ]
 
