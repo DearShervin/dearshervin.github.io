@@ -61,13 +61,13 @@ const workExperiences = [
         role: "Front-End Developer Intern",
         company: "ECB.ir",
         duration: "Summer 2023",
-        description: "Developed and implemented a new feature for a large-scale data processing pipeline, improving efficiency by 15%. Collaborated with a cross-functional team in an agile environment."
+        description: "Gained hands-on experience with modern development tools and workflows. Contributed to deploying new features and learned to navigate a professional codebase in an agile environment."
     },
     {
       role: "Front-End Designer",
       company: "ECB.ir",
       duration: "Summer 2024 - Now",
-      description: "Developed and implemented a new feature for a large-scale data processing pipeline, improving efficiency by 15%. Collaborated with a cross-functional team in an agile environment."
+      description: "Designed and developed user-centric interfaces for diverse web projects, including a high-performance e-commerce site using Next.js and a feature-rich platform with WordPress. Focused on creating responsive, scalable, and intuitive user experiences."
   }
 ]
 
