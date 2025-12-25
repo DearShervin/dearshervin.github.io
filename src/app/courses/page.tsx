@@ -30,7 +30,7 @@ export default function CoursesPage() {
   return (
     <div className="container mx-auto max-w-5xl px-4 py-12">
       <section id="course-list" className="mb-16">
-        <h2 className="font-headline mb-8 text-center text-4xl font-semibold">
+        <h2 className="font-headline mb-8 text-center text-4xl font-bold md:text-5xl">
           Related Courses
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
