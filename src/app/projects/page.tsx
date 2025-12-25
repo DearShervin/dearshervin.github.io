@@ -7,40 +7,40 @@ import { Github, ExternalLink, Download } from "lucide-react";
 
 const projects = [
   {
-    title: "Interactive Data Visualization Tool",
-    description: "A web-based platform for creating interactive charts and graphs from CSV data. Built with React and D3.js, it offers a user-friendly interface for data exploration.",
+    title: "Python Music Suggestor",
+    description: "A music suggestion engine developed for an Advanced Programming Languages course. The Python-based tool uses collaborative filtering to recommend songs based on user listening habits.",
     image: "https://placehold.co/600x400.png",
-    tags: ["React", "D3.js", "Next.js", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-    imageHint: "data visualization"
-  },
-  {
-    title: "Sentiment Analysis API",
-    description: "A RESTful API that analyzes the sentiment of a given text. Developed using Python, Flask, and the NLTK library, deployed on a cloud service.",
-    image: "https://placehold.co/600x400.png",
-    tags: ["Python", "Flask", "NLTK", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#",
-    imageHint: "code terminal"
-  },
-  {
-    title: "E-commerce Mobile App",
-    description: "A cross-platform mobile application for an e-commerce store, featuring product browsing, a shopping cart, and a secure checkout process. Built with React Native.",
-    image: "https://placehold.co/600x400.png",
-    tags: ["React Native", "Firebase", "Stripe API"],
-    liveUrl: "#",
-    githubUrl: "#",
-    imageHint: "mobile app"
-  },
-  {
-    title: "Course Scheduler Algorithm",
-    description: "A constraint satisfaction algorithm to generate optimal course schedules for university students, considering prerequisites, time conflicts, and professor preferences.",
-    image: "https://placehold.co/600x400.png",
-    tags: ["Java", "Algorithms", "Optimization"],
+    tags: ["Python", "Algorithms", "Pandas", "Scikit-learn"],
     liveUrl: null,
     githubUrl: "#",
-    imageHint: "whiteboard algorithm"
+    imageHint: "music playlist"
+  },
+  {
+    title: "Client Website Design 1",
+    description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity.",
+    image: "https://placehold.co/600x400.png",
+    tags: ["Web Design", "React", "Next.js", "Figma"],
+    liveUrl: "#",
+    githubUrl: "#",
+    imageHint: "website design"
+  },
+  {
+    title: "Client Website Design 2",
+    description: "A full-stack project for another client, featuring a custom content management system. This project involved both front-end and back-end development to deliver a tailored solution.",
+    image: "https://placehold.co/600x400.png",
+    tags: ["React", "Node.js", "CMS", "UI/UX"],
+    liveUrl: "#",
+    githubUrl: "#",
+    imageHint: "web development"
+  },
+  {
+    title: "Client Website Design 3",
+    description: "Built a high-performance e-commerce site with a focus on scalability and user engagement. Integrated various third-party services for payments and shipping.",
+    image: "https://placehold.co/600x400.png",
+    tags: ["E-commerce", "Next.js", "Tailwind CSS", "Stripe"],
+    liveUrl: "#",
+    githubUrl: "#",
+    imageHint: "online store"
   },
 ];
 
