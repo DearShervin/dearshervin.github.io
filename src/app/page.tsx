@@ -12,7 +12,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <div className="relative mx-auto mb-4 h-48 w-48 overflow-hidden rounded-full shadow-lg md:h-56 md:w-56">
             <Image
-              src="/studio/images/profile.jpg"
+              src="/images/profile.jpg"
               alt="Student's Picture"
               fill
               className="object-cover"
@@ -61,7 +61,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Natural Language Processing</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Diving deep into how machines can comprehend, interpret, and generate human language to create more natural interactions.</p>
+                <p className="text-muted-foreground">Exploring how computers can be taught to process and understand human language to bridge the communication gap.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
