@@ -23,7 +23,6 @@ export default function Home() {
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Hi, I'm [My Name]
           </h1>
-          <h2 className="mb-4 text-3xl font-semibold mt-4">A Passionate Scholar and Innovator</h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             Welcome to my digital portfolio. I am a prospective graduate student with a deep interest in Machine Learning, Natural Language Processing, and Human-Computer Interaction. Explore my work, research, and teaching journey.
           </p>
