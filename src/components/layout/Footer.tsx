@@ -1,8 +1,15 @@
+"use client";
+
 import { Mail, Github } from "lucide-react";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="border-t bg-background">
