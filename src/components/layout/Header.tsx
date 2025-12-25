@@ -20,22 +20,16 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const NavLink = ({ href, label }: { href: string; label: string }) => {
-    const isActive = isClient && pathname === href;
+    const isActive = pathname === href;
+  
     return (
       <Link
         href={href}
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary",
-          isActive
-            ? "text-accent font-semibold"
-            : "text-muted-foreground"
+          isActive ? "text-accent font-semibold" : "text-muted-foreground"
         )}
         onClick={() => setIsMobileMenuOpen(false)}
       >
@@ -43,6 +37,7 @@ export default function Header() {
       </Link>
     );
   };
+  
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
