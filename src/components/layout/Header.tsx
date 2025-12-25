@@ -31,7 +31,9 @@ export default function Header() {
       href={href}
       className={cn(
         "text-sm font-medium transition-colors hover:text-primary",
-        isClient && pathname === href ? "text-accent font-semibold" : "text-muted-foreground"
+        isClient && pathname === href
+          ? "text-accent font-semibold"
+          : "text-muted-foreground"
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
