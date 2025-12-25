@@ -46,13 +46,43 @@ const projects = [
 
 const presentations = [
     {
-        title: "The Role of Attention Mechanisms in NLP",
-        description: "Presented at the International Conference on Computational Linguistics. This talk covered the evolution of attention mechanisms and their impact on models like the Transformer.",
+        title: "Operating Systems: Docker",
+        description: "SRBIAU (English).",
         downloadLink: "#"
     },
     {
-        title: "Ethical Considerations in AI-driven UX",
-        description: "A talk for the HCI seminar series, discussing the ethical responsibilities of designers when creating user experiences powered by artificial intelligence.",
+        title: "Artificial Intelligence: 8-Queen Problem",
+        description: "SRBIAU (English).",
+        downloadLink: "#"
+    },
+    {
+        title: "Networking: Domain Name System (DNS)",
+        description: "SRBIAU (Persian).",
+        downloadLink: "#"
+    },
+    {
+        title: "Computer Systems: Cryptography",
+        description: "SRBIAU (Persian).",
+        downloadLink: "#"
+    },
+    {
+        title: "Basics of Matrices and Linear Algebra: Proof of Theory",
+        description: "SRBIAU (Persian).",
+        downloadLink: "#"
+    },
+    {
+        title: "Linear Algebra: Applications in Machine Learning",
+        description: "SRBIAU (Persian).",
+        downloadLink: "#"
+    },
+    {
+        title: "Algebra: Proof of Theories",
+        description: "SRBIAU (Persian).",
+        downloadLink: "#"
+    },
+    {
+        title: "Intro to Combinations: Proof of Theories",
+        description: "SRBIAU (Persian).",
         downloadLink: "#"
     }
 ]
