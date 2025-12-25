@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, Calendar, UserCheck } from "lucide-react";
+import { Download, Users, Calendar, UserCheck, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const researchPapers = [
@@ -15,7 +15,9 @@ const researchPapers = [
     title: "Multi-commodity Transportation Problems",
     supervisor: "Dr. Farhad Hosseinzadeh Lotfi",
     supervisorLink: "https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en",
-    description: "Mathematical modeling of Multi-commodity Transportation Problems (MCTP). I introduced a method for solving MCTP using SciPy in Python and developed a program with a simple UI to solve these problems. The tool is deployed on Hugging Face Spaces for a live demo using the Gradio Python library.",
+    description: "Mathematical modeling of Multi-commodity Transportation Problems (MCTP). I explained a method for solving MCTP using SciPy in Python and developed a program with a simple UI to solve these problems. The tool is deployed on Hugging Face Spaces for a live demo using the Gradio Python library.",
+    demoUrl: "#",
+    pdfUrl: "#",
   },
   {
     title: "Advanced Models for Natural Language Understanding",
@@ -118,16 +120,32 @@ export default function ExperiencePage() {
               <CardContent>
                 <p className="leading-relaxed">{paper.abstract || paper.description}</p>
               </CardContent>
-              {paper.downloadLink && (
-                <CardFooter>
+              <CardFooter className="flex gap-2">
+                {paper.demoUrl && (
+                  <Button asChild>
+                    <a href={paper.demoUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
+                {paper.pdfUrl && (
+                  <Button asChild variant="secondary">
+                    <a href={paper.pdfUrl} download>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download PDF
+                    </a>
+                  </Button>
+                )}
+                {paper.downloadLink && (
                   <Button asChild>
                     <a href={paper.downloadLink} download>
                       <Download className="mr-2 h-4 w-4" />
                       Download PDF
                     </a>
                   </Button>
-                </CardFooter>
-              )}
+                )}
+              </CardFooter>
             </Card>
           ))}
         </div>
