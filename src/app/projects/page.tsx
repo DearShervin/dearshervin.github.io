@@ -47,42 +47,42 @@ const projects = [
 const presentations = [
     {
         title: "Operating Systems: Docker",
-        description: "SRBIAU (English).",
+        description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment. Presented at SRBIAU (English).",
         downloadLink: "#"
     },
     {
         title: "Artificial Intelligence: 8-Queen Problem",
-        description: "SRBIAU (English).",
+        description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems. Presented at SRBIAU (English).",
         downloadLink: "#"
     },
     {
         title: "Networking: Domain Name System (DNS)",
-        description: "SRBIAU (Persian).",
+        description: "An in-depth look at the Domain Name System (DNS), explaining its hierarchical structure, resolution process, and critical role in internet infrastructure. Presented at SRBIAU (Persian).",
         downloadLink: "#"
     },
     {
         title: "Computer Systems: Cryptography",
-        description: "SRBIAU (Persian).",
+        description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems. Presented at SRBIAU (Persian).",
         downloadLink: "#"
     },
     {
         title: "Basics of Matrices and Linear Algebra: Proof of Theory",
-        description: "SRBIAU (Persian).",
+        description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems. Presented at SRBIAU (Persian).",
         downloadLink: "#"
     },
     {
         title: "Linear Algebra: Applications in Machine Learning",
-        description: "SRBIAU (Persian).",
+        description: "Discusses the practical applications of linear algebra in machine learning, covering topics like dimensionality reduction with PCA and its role in neural networks. Presented at SRBIAU (Persian).",
         downloadLink: "#"
     },
     {
         title: "Algebra: Proof of Theories",
-        description: "SRBIAU (Persian).",
+        description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures. Presented at SRBIAU (Persian).",
         downloadLink: "#"
     },
     {
         title: "Intro to Combinations: Proof of Theories",
-        description: "SRBIAU (Persian).",
+        description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations. Presented at SRBIAU (Persian).",
         downloadLink: "#"
     }
 ]
