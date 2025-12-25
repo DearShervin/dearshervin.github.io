@@ -19,10 +19,10 @@ export default function Footer() {
             &copy; {year} Shervin Iranaghideh. All Rights Reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="mailto:your-email@example.com" aria-label="Email">
+            <Link href="mailto:sherviniranaghidehl@gmail.com" aria-label="Email">
               <Mail className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
-            <Link href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <Link href="https://github.com/dearshervin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
           </div>
