@@ -26,6 +26,7 @@ const researchPapers = [
     supervisor: "Dr. Tofigh Allahviranloo",
     supervisorLink: "https://scholar.google.com/citations?user=HjHkaiwAAAAJ&hl=en",
     date: "Fall 2024",
+    downloadLink: "#"
   },
 ];
 
