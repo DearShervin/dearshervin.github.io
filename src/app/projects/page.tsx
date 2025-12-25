@@ -50,56 +50,56 @@ const presentations = [
         subject: "Docker",
         description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
         details: "Presented at SRBIAU (English)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/OS-Docker.pdf"
     },
     {
         course: "Artificial Intelligence",
         subject: "8-Queen Problem",
         description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems.",
         details: "Presented at SRBIAU (English)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/AI-8-Queen.pdf"
     },
     {
         course: "Networking",
         subject: "Domain Name System (DNS)",
         description: "An in-depth look at the Domain Name System (DNS), explaining its hierarchical structure, resolution process, and critical role in internet infrastructure.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/Networking-DNS.pdf"
     },
     {
         course: "Computer Systems",
         subject: "Cryptography",
         description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/Systems-Cryptography.pdf"
     },
     {
         course: "Basics of Matrices and Linear Algebra",
         subject: "Proof of Theory",
         description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/Matrices-Linear-Algebra-Proofs.pdf"
     },
     {
         course: "Linear Algebra",
         subject: "Applications in Machine Learning",
         description: "Discusses the practical applications of linear algebra in machine learning, covering topics like dimensionality reduction with PCA and its role in neural networks.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/Linear-Algebra-ML-Applications.pdf"
     },
     {
         course: "Algebra",
         subject: "Proof of Theories",
         description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/Algebra-Proofs.pdf"
     },
     {
         course: "Intro to Combinations",
         subject: "Proof of Theories",
         description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "#"
+        downloadLink: "/pdfs/Combinations-Proofs.pdf"
     }
 ]
 
