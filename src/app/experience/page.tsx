@@ -21,12 +21,11 @@ const researchPapers = [
     date: "Spring 2023",
   },
   {
-    title: "Advanced Models for Natural Language Understanding",
-    authors: "Jane Doe, Michael Brown",
-    date: "June 2023",
-    journal: "Transactions on Linguistics and Computation",
-    abstract: "We introduce a novel neural network architecture that achieves state-of-the-art results on several benchmark datasets for natural language understanding. Our model leverages a unique attention mechanism to better capture long-range dependencies in text.",
-    downloadLink: "#",
+    title: "Are Memory Networks actually interpretable?",
+    description: "Core idea: Memory Networks produce attention over sentences across hops. People often treat this as “explanations.” Test whether that’s true.",
+    supervisor: "Dr. Tofigh Allahviranloo",
+    supervisorLink: "https://scholar.google.com/citations?user=HjHkaiwAAAAJ&hl=en",
+    date: "Fall 2024",
   },
 ];
 
