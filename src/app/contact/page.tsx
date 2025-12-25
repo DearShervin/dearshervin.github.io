@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Github } from "lucide-react";
 import Link from "next/link";
 import { ContactForm } from "./ContactForm";
 
@@ -8,12 +8,6 @@ const contactDetails = [
     label: "Email",
     value: "your-email@example.com",
     href: "mailto:your-email@example.com",
-  },
-  {
-    icon: <Linkedin className="h-6 w-6 text-accent" />,
-    label: "LinkedIn",
-    value: "linkedin.com/in/your-profile",
-    href: "https://linkedin.com/in/your-profile",
   },
   {
     icon: <Github className="h-6 w-6 text-accent" />,
