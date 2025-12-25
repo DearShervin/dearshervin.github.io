@@ -12,34 +12,34 @@ const projects = [
     image: "https://placehold.co/600x400.png",
     tags: ["Python", "Algorithms", "Pandas", "Scikit-learn"],
     liveUrl: null,
-    githubUrl: "#",
+    githubUrl: null,
     imageHint: "music playlist"
   },
   {
-    title: "Client Website Design 1",
-    description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity.",
-    image: "https://placehold.co/600x400.png",
-    tags: ["Web Design", "React", "Next.js", "Figma"],
+    title: "PDFCHAP.com",
+    description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity. In addition, adding functionallites for calculating prices for the checkout process.",
+    image: "public/images/www.pdfchap.com.jpg",
+    tags: ["Web Design", "WordPress", "jQuery", "CMS", "Node.js"],
     liveUrl: "#",
-    githubUrl: "#",
-    imageHint: "website design"
-  },
-  {
-    title: "Client Website Design 2",
-    description: "A full-stack project for another client, featuring a custom content management system. This project involved both front-end and back-end development to deliver a tailored solution.",
-    image: "https://placehold.co/600x400.png",
-    tags: ["React", "Node.js", "CMS", "UI/UX"],
-    liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: null,
     imageHint: "web development"
   },
   {
-    title: "Client Website Design 3",
+    title: "ECB.ir",
+    description: "Various contirbutions to News and Blogs and Learn pages such as desiging layouts, writing Learn posts and blogs.",
+    image: "public/images/www.ecb.ir.jpg",
+    tags: ["DNN", "jQuery", "CMS", "UI/UX", ".NET"],
+    liveUrl: "https://www.ecb.ir/",
+    githubUrl: null,
+    imageHint: "website design"
+  },
+  {
+    title: "ZANDPERFUMES.com",
     description: "Built a high-performance e-commerce site with a focus on scalability and user engagement. Integrated various third-party services for payments and shipping.",
-    image: "https://placehold.co/600x400.png",
+    image: "public/images/www.zandperfumes.com.jpg",
     tags: ["E-commerce", "Next.js", "Tailwind CSS", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://www.zandperfumes.com/",
+    githubUrl: null,
     imageHint: "online store"
   },
 ];
@@ -50,35 +50,35 @@ const presentations = [
         subject: "Docker",
         description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
         details: "Presented at SRBIAU (English)",
-        downloadLink: "/pdfs/OS-Docker.pdf"
+        downloadLink: "public/pdfs/Docker Presentation.pdf"
     },
     {
         course: "Artificial Intelligence",
         subject: "8-Queen Problem",
         description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems.",
         details: "Presented at SRBIAU (English)",
-        downloadLink: "/pdfs/AI-8-Queen.pdf"
+        downloadLink: "public/pdfs/8-Queen Presentation.pdf"
     },
     {
         course: "Networking",
         subject: "Domain Name System (DNS)",
         description: "An in-depth look at the Domain Name System (DNS), explaining its hierarchical structure, resolution process, and critical role in internet infrastructure.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "/pdfs/Networking-DNS.pdf"
+        downloadLink: "public/pdfs/DNS.pdf"
     },
     {
         course: "Computer Systems",
         subject: "Cryptography",
         description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "/pdfs/Systems-Cryptography.pdf"
+        downloadLink: "public/pdfs/Cryptography-Computer Systems.pdf"
     },
     {
         course: "Basics of Matrices and Linear Algebra",
         subject: "Proof of Theory",
         description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "/pdfs/Matrices-Linear-Algebra-Proofs.pdf"
+        downloadLink: "public/pdfs/Proof of Theory-Basics of Matrices and Linear Algebra.pdf"
     },
     {
         course: "Linear Algebra",
@@ -92,14 +92,14 @@ const presentations = [
         subject: "Proof of Theories",
         description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "/pdfs/Algebra-Proofs.pdf"
+        downloadLink: "public/pdfs/Proof of Theory-Algebra Presentation.pdf"
     },
     {
         course: "Intro to Combinations",
         subject: "Proof of Theories",
         description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "/pdfs/Combinations-Proofs.pdf"
+        downloadLink: "public/pdfs/Catalan Numbers-Algebra.pdf"
     }
 ]
 
@@ -145,16 +145,18 @@ export default function ProjectsPage() {
                 <Button asChild variant="outline">
                   <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                    Website Link
                   </Link>
                 </Button>
               )}
-              <Button asChild>
-                <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
-                  Source Code
-                </Link>
-              </Button>
+              {project.githubUrl && (
+                <Button asChild>
+                  <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    Source Code
+                  </Link>
+                </Button>
+              )}
             </CardFooter>
           </Card>
         ))}
