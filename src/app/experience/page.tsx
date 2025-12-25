@@ -18,6 +18,7 @@ const researchPapers = [
     description: "Mathematical modeling of Multi-commodity Transportation Problems (MCTP). I explained a method for solving MCTP using SciPy in Python and developed a program with a simple UI to solve these problems. The tool is deployed on Hugging Face Spaces for a live demo using the Gradio Python library.",
     demoUrl: "#",
     pdfUrl: "#",
+    date: "Spring 2023",
   },
   {
     title: "Advanced Models for Natural Language Understanding",
