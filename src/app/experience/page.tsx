@@ -7,7 +7,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, Calendar, Briefcase } from "lucide-react";
+import { Download, Users, Calendar } from "lucide-react";
+import Link from "next/link";
 
 const researchPapers = [
   {
@@ -34,28 +35,24 @@ const teachingExperiences = [
         course: "Linear Programming (Optimization)",
         institution: "SRBIAU",
         duration: "Fall 2023",
-        description: "Under instruction of Dr. Farhad Hosseinzadeh Lotfi, developed practice problems, provided troubleshooting support for students, and conducted 1-hour practice problem-solving sessions. (Course source: Linear Programming and Network Flows, Bazaraa et al.)"
+        description: [
+          "Under instruction of ",
+          <Link href="https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en" key="lotfi-link" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Dr. Farhad Hosseinzadeh Lotfi</Link>,
+          ", developed practice problems, provided troubleshooting support for students, and conducted 1-hour practice problem-solving sessions. ",
+          <span key="lotfi-source" className="mt-2 block italic text-muted-foreground">(Course source: Linear Programming and Network Flows, Bazaraa et al.)</span>
+        ]
     },
     {
         role: "Teaching Assistant",
         course: "Calculus 1",
         institution: "SRBIAU",
         duration: "Fall 2023",
-        description: "Under instruction of Dr. Somayeh Ghezelahmad, provided troubleshooting support, assessed student assignments and exams, and managed the final 45 minutes of each class. (Course source: James Stewart Calculus 7th Ed)"
-    },
-    {
-        role: "Teaching Assistant",
-        course: "Introduction to Computer Science (CS101)",
-        institution: "University of Technology",
-        duration: "Fall 2022 - Spring 2023",
-        description: "Led weekly discussion sections for 50+ students, graded assignments and exams, and held office hours to provide one-on-one assistance with programming concepts in Python."
-    },
-    {
-        role: "Guest Lecturer",
-        course: "Data Structures and Algorithms (CS201)",
-        institution: "State University",
-        duration: "March 2022",
-        description: "Delivered a guest lecture on the practical applications of graph algorithms in social network analysis and logistics."
+        description: [
+          "Under instruction of ",
+          <Link href="https://scholar.google.com/citations?user=mpbXVNoAAAAJ&hl=en" key="ghezelahmad-link" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Dr. Somayeh Ghezelahmad</Link>,
+          ", provided troubleshooting support, assessed student assignments and exams, and managed the final 45 minutes of each class. ",
+          <span key="ghezelahmad-source" className="mt-2 block italic text-muted-foreground">(Course source: James Stewart Calculus 7th Ed)</span>
+        ]
     }
 ];
 
