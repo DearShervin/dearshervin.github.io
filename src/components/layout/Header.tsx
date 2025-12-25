@@ -39,7 +39,7 @@ export default function Header() {
       <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <BookUser className="h-6 w-6 text-accent" />
-          <span className="font-headline text-lg font-bold">ScholarSite</span>
+          <span className="font-headline text-lg font-bold">Shervin's Portfolio</span>
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-6">
@@ -60,7 +60,7 @@ export default function Header() {
               <div className="p-4">
                 <Link href="/" className="flex items-center gap-2 mb-8">
                     <BookUser className="h-6 w-6 text-accent" />
-                    <span className="font-headline text-lg font-bold">ScholarSite</span>
+                    <span className="font-headline text-lg font-bold">Shervin's Portfolio</span>
                 </Link>
                 <nav className="flex flex-col gap-6">
                   {navLinks.map((link) => (

@@ -6,7 +6,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'ScholarSite - Student Portfolio',
+  title: "Shervin's Portfolio",
   description: 'A modern portfolio for a prospective graduate student.',
 };
 

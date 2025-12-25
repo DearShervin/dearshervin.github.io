@@ -14,8 +14,8 @@ export default function Home() {
             <Image
               src="images/profile.jpg"
               alt="Student's Picture"
-              width={128}
-              height={128}
+              width={200}
+              height={200}
               className="rounded-full shadow-lg"
               data-ai-hint="profile picture"
             />
