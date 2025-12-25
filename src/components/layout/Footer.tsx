@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Github } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -14,9 +14,6 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <Link href="mailto:your-email@example.com" aria-label="Email">
               <Mail className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
-            </Link>
-            <Link href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
             <Link href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
