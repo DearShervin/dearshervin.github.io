@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, BrainCircuit, Lightbulb, MessageSquare } from 'lucide-react';
+import { ArrowRight, BrainCircuit, Lightbulb, MessageSquare, Download } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <div className="relative mx-auto mb-4 h-48 w-48 overflow-hidden rounded-full shadow-lg md:h-56 md:w-56">
             <Image
-              src="/public/images/profile.jpg"
+              src="/images/profile.jpg"
               alt="Student's Picture"
               fill
               className="object-cover"
@@ -25,11 +25,17 @@ export default function Home() {
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             Welcome to my portfolio. I am an aspiring prospective graduate student and I am highly looking forward to conduct research related to areas of my interest.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Button asChild size="lg">
               <Link href="/experience">
                 More About Me <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
+            </Button>
+             <Button asChild variant="outline" size="lg">
+              <a href="/pdfs/Shervin-Iranaghideh-CV.pdf" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </a>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="/contact">Get In Touch</Link>
