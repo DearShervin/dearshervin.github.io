@@ -31,6 +31,20 @@ const researchPapers = [
 const teachingExperiences = [
     {
         role: "Teaching Assistant",
+        course: "Linear Programming (Optimization)",
+        institution: "SRBIAU",
+        duration: "Fall 2023",
+        description: "Under instruction of Dr. Farhad Hosseinzadeh Lotfi, developed practice problems, provided troubleshooting support for students, and conducted 1-hour practice problem-solving sessions. (Course source: Linear Programming and Network Flows, Bazaraa et al.)"
+    },
+    {
+        role: "Teaching Assistant",
+        course: "Calculus 1",
+        institution: "SRBIAU",
+        duration: "Fall 2023",
+        description: "Under instruction of Dr. Somayeh Ghezelahmad, provided troubleshooting support, assessed student assignments and exams, and managed the final 45 minutes of each class. (Course source: James Stewart Calculus 7th Ed)"
+    },
+    {
+        role: "Teaching Assistant",
         course: "Introduction to Computer Science (CS101)",
         institution: "University of Technology",
         duration: "Fall 2022 - Spring 2023",
