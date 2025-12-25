@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, BrainCircuit, PenTool, Database, Laptop } from "lucide-react";
+import { Code, BrainCircuit, PenTool, Database, Laptop, Wrench } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
@@ -14,9 +14,14 @@ const skillCategories = [
     skills: ["Javascript", "HTML", "CSS", "Next.js", "React"],
   },
   {
+    icon: <Wrench className="h-8 w-8 text-accent" />,
+    title: "Developer Tools",
+    skills: ["Git", "Docker", "Excel", "PowerPoint"],
+  },
+  {
     icon: <PenTool className="h-8 w-8 text-accent" />,
-    title: "Developer & Design Tools",
-    skills: ["Git", "Docker", "Excel", "PowerPoint", "Illustrator", "Figma"],
+    title: "Design Tools",
+    skills: ["Illustrator", "Figma", "Photoshop", "Premier Pro"],
   },
 ];
 
@@ -34,7 +39,7 @@ export default function SkillsPage() {
       </header>
 
       <section id="skills">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {skillCategories.map((category, index) => (
             <Card key={index}>
               <CardHeader className="items-center">
