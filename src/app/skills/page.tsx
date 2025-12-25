@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, BrainCircuit, PenTool, Database, Laptop, Wrench } from "lucide-react";
+import { BrainCircuit, Laptop, Wrench, PenTool } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
