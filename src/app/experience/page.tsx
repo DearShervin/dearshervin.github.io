@@ -93,14 +93,7 @@ export default function ExperiencePage() {
             <Card key={index}>
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">{paper.title}</CardTitle>
-                {paper.journal && <CardDescription className="text-base">{paper.journal}</CardDescription>}
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2 text-sm text-muted-foreground">
-                    {paper.authors && (
-                      <div className="flex items-center gap-2">
-                          <Users className="h-4 w-4" />
-                          <span>{paper.authors}</span>
-                      </div>
-                    )}
                     {paper.date && (
                       <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4" />
@@ -119,7 +112,7 @@ export default function ExperiencePage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="leading-relaxed">{paper.abstract || paper.description}</p>
+                <p className="leading-relaxed">{paper.description}</p>
               </CardContent>
               <CardFooter className="flex gap-2">
                 {paper.demoUrl && (
