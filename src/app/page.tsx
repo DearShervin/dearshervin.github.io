@@ -10,13 +10,12 @@ export default function Home() {
     <div className="space-y-16 md:space-y-24">
       <section className="container mx-auto px-4 pt-16 text-center">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-4 flex justify-center">
+          <div className="relative mx-auto mb-4 h-48 w-48 overflow-hidden rounded-full shadow-lg md:h-56 md:w-56">
             <Image
-              src="images/profile.jpg"
+              src="/images/profile.jpg"
               alt="Student's Picture"
-              width={300}
-              height={300}
-              className="rounded-full shadow-lg"
+              fill
+              className="object-cover"
               data-ai-hint="profile picture"
             />
           </div>
@@ -62,7 +61,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Natural Language Processing</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Building systems that can understand, interpret, and generate human language.</p>
+                <p className="text-muted-foreground">Exploring how computers can be taught to process and understand human language to bridge the communication gap.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
