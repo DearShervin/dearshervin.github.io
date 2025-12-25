@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Download } from "lucide-react";
@@ -46,43 +46,59 @@ const projects = [
 
 const presentations = [
     {
-        title: "Operating Systems: Docker",
-        description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment. Presented at SRBIAU (English).",
+        course: "Operating Systems",
+        subject: "Docker",
+        description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
+        details: "Presented at SRBIAU (English)",
         downloadLink: "#"
     },
     {
-        title: "Artificial Intelligence: 8-Queen Problem",
-        description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems. Presented at SRBIAU (English).",
+        course: "Artificial Intelligence",
+        subject: "8-Queen Problem",
+        description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems.",
+        details: "Presented at SRBIAU (English)",
         downloadLink: "#"
     },
     {
-        title: "Networking: Domain Name System (DNS)",
-        description: "An in-depth look at the Domain Name System (DNS), explaining its hierarchical structure, resolution process, and critical role in internet infrastructure. Presented at SRBIAU (Persian).",
+        course: "Networking",
+        subject: "Domain Name System (DNS)",
+        description: "An in-depth look at the Domain Name System (DNS), explaining its hierarchical structure, resolution process, and critical role in internet infrastructure.",
+        details: "Presented at SRBIAU (Persian)",
         downloadLink: "#"
     },
     {
-        title: "Computer Systems: Cryptography",
-        description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems. Presented at SRBIAU (Persian).",
+        course: "Computer Systems",
+        subject: "Cryptography",
+        description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems.",
+        details: "Presented at SRBIAU (Persian)",
         downloadLink: "#"
     },
     {
-        title: "Basics of Matrices and Linear Algebra: Proof of Theory",
-        description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems. Presented at SRBIAU (Persian).",
+        course: "Basics of Matrices and Linear Algebra",
+        subject: "Proof of Theory",
+        description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems.",
+        details: "Presented at SRBIAU (Persian)",
         downloadLink: "#"
     },
     {
-        title: "Linear Algebra: Applications in Machine Learning",
-        description: "Discusses the practical applications of linear algebra in machine learning, covering topics like dimensionality reduction with PCA and its role in neural networks. Presented at SRBIAU (Persian).",
+        course: "Linear Algebra",
+        subject: "Applications in Machine Learning",
+        description: "Discusses the practical applications of linear algebra in machine learning, covering topics like dimensionality reduction with PCA and its role in neural networks.",
+        details: "Presented at SRBIAU (Persian)",
         downloadLink: "#"
     },
     {
-        title: "Algebra: Proof of Theories",
-        description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures. Presented at SRBIAU (Persian).",
+        course: "Algebra",
+        subject: "Proof of Theories",
+        description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures.",
+        details: "Presented at SRBIAU (Persian)",
         downloadLink: "#"
     },
     {
-        title: "Intro to Combinations: Proof of Theories",
-        description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations. Presented at SRBIAU (Persian).",
+        course: "Intro to Combinations",
+        subject: "Proof of Theories",
+        description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations.",
+        details: "Presented at SRBIAU (Persian)",
         downloadLink: "#"
     }
 ]
@@ -152,10 +168,12 @@ export default function ProjectsPage() {
           {presentations.map((presentation, index) => (
             <Card key={index}>
               <CardHeader>
-                <CardTitle className="font-headline text-2xl">{presentation.title}</CardTitle>
+                <CardTitle className="font-headline text-2xl">{presentation.subject}</CardTitle>
+                <CardDescription className="font-medium">Course: {presentation.course}</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="leading-relaxed">{presentation.description}</p>
+                <p className="mt-4 text-sm text-muted-foreground">{presentation.details}</p>
               </CardContent>
               <CardFooter>
                 <Button asChild>
