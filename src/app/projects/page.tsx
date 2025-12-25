@@ -8,9 +8,9 @@ import { Github, ExternalLink, Download } from "lucide-react";
 const projects = [
   {
     title: "Python Music Suggestor",
-    description: "A music suggestion engine developed for an Advanced Programming Languages course. The Python-based tool uses collaborative filtering to recommend songs based on user listening habits.",
+    description: "Made an application with Python programming language called Music Suggester that suggests songs to users based on their taste after they choose a list of answers.",
     image: "https://placehold.co/600x400.png",
-    tags: ["Python", "Algorithms", "Pandas", "Scikit-learn"],
+    tags: ["Python", "Algorithms", "Object-Oriented Programming (OOP)"],
     liveUrl: null,
     githubUrl: null,
     imageHint: "music playlist"
@@ -111,7 +111,7 @@ export default function ProjectsPage() {
           My Projects
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          A selection of my work, from web applications to algorithms.
+          A selection of my work, from web applications to my academic presentations.
         </p>
       </header>
 
