@@ -10,7 +10,7 @@ export default function Home() {
     <div className="space-y-16 md:space-y-24">
       <section className="container mx-auto px-4 pt-16 text-center">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-8 flex justify-center">
+          <div className="mb-4 flex justify-center">
             <Image
               src="https://placehold.co/128x128.png"
               alt="Student's Picture"
@@ -20,6 +20,7 @@ export default function Home() {
               data-ai-hint="profile picture"
             />
           </div>
+          <h2 className="mb-4 text-3xl font-semibold">Hi, I'm [My Name]</h2>
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             A Passionate Scholar and Innovator
           </h1>
