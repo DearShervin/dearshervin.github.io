@@ -12,7 +12,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-4 flex justify-center">
             <Image
-              src="https://placehold.co/128x128.png"
+              src="/profile.jpg"
               alt="Student's Picture"
               width={128}
               height={128}
