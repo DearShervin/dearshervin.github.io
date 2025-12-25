@@ -12,7 +12,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <div className="relative mx-auto mb-4 h-48 w-48 overflow-hidden rounded-full shadow-lg md:h-56 md:w-56">
             <Image
-              src="/images/profile.jpg"
+              src="/public/images/profile.jpg"
               alt="Student's Picture"
               fill
               className="object-cover"
