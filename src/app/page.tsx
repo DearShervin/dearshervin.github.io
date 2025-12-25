@@ -62,7 +62,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Natural Language Processing</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Exploring the intersection of language and computer science to understand and process human language.</p>
+                <p className="text-muted-foreground">Building systems that can understand, interpret, and generate human language.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
