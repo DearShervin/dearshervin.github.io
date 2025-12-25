@@ -19,7 +19,7 @@ const projects = [
     title: "PDFCHAP.com",
     description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity. In addition, adding functionallites for calculating prices for the checkout process.",
     image: "public/images/www.pdfchap.com.jpg",
-    tags: ["Web Design", "WordPress", "jQuery", "CMS", "Node.js"],
+    tags: ["Web Design", "WordPress", "jQuery", "CMS"],
     liveUrl: "#",
     githubUrl: null,
     imageHint: "web development"
@@ -37,7 +37,7 @@ const projects = [
     title: "ZANDPERFUMES.com",
     description: "Built a high-performance e-commerce site with a focus on scalability and user engagement. Integrated various third-party services for payments and shipping.",
     image: "public/images/www.zandperfumes.com.jpg",
-    tags: ["E-commerce", "Next.js", "Tailwind CSS", "Stripe"],
+    tags: ["Web Design", "WordPress", "jQuery", "CMS"],
     liveUrl: "https://www.zandperfumes.com/",
     githubUrl: null,
     imageHint: "online store"
