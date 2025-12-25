@@ -7,17 +7,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, Calendar } from "lucide-react";
+import { Download, Users, Calendar, UserCheck } from "lucide-react";
 import Link from "next/link";
 
 const researchPapers = [
   {
-    title: "The Impact of AI on Modern Education Systems",
-    authors: "Jane Doe, John Smith, Emily White",
-    date: "October 2023",
-    journal: "Journal of Educational Technology",
-    abstract: "This paper explores the multifaceted impact of artificial intelligence on contemporary education, from personalized learning platforms to automated grading systems. We analyze both the potential benefits and the ethical challenges, providing a comprehensive framework for educators and policymakers.",
-    downloadLink: "#",
+    title: "Multi-commodity Transportation Problems",
+    supervisor: "Dr. Farhad Hosseinzadeh Lotfi",
+    supervisorLink: "https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en",
+    description: "Mathematical modeling of Multi-commodity Transportation Problems (MCTP). I introduced a method for solving MCTP using SciPy in Python and developed a program with a simple UI to solve these problems. The tool is deployed on Hugging Face Spaces for a live demo using the Gradio Python library.",
   },
   {
     title: "Advanced Models for Natural Language Understanding",
@@ -92,29 +90,44 @@ export default function ExperiencePage() {
             <Card key={index}>
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">{paper.title}</CardTitle>
-                <CardDescription className="text-base">{paper.journal}</CardDescription>
+                {paper.journal && <CardDescription className="text-base">{paper.journal}</CardDescription>}
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-2">
-                        <Users className="h-4 w-4" />
-                        <span>{paper.authors}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <Calendar className="h-4 w-4" />
-                        <span>{paper.date}</span>
-                    </div>
+                    {paper.authors && (
+                      <div className="flex items-center gap-2">
+                          <Users className="h-4 w-4" />
+                          <span>{paper.authors}</span>
+                      </div>
+                    )}
+                    {paper.date && (
+                      <div className="flex items-center gap-2">
+                          <Calendar className="h-4 w-4" />
+                          <span>{paper.date}</span>
+                      </div>
+                    )}
+                    {paper.supervisor && paper.supervisorLink && (
+                       <div className="flex items-center gap-2">
+                        <UserCheck className="h-4 w-4" />
+                        <span>Supervisor: </span>
+                        <Link href={paper.supervisorLink} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                          {paper.supervisor}
+                        </Link>
+                      </div>
+                    )}
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="leading-relaxed">{paper.abstract}</p>
+                <p className="leading-relaxed">{paper.abstract || paper.description}</p>
               </CardContent>
-              <CardFooter>
-                <Button asChild>
-                  <a href={paper.downloadLink} download>
-                    <Download className="mr-2 h-4 w-4" />
-                    Download PDF
-                  </a>
-                </Button>
-              </CardFooter>
+              {paper.downloadLink && (
+                <CardFooter>
+                  <Button asChild>
+                    <a href={paper.downloadLink} download>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download PDF
+                    </a>
+                  </Button>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>
