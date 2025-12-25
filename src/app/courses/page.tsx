@@ -4,23 +4,23 @@ import { Download, BookOpen } from "lucide-react";
 
 const courses = [
   {
-    title: "Advanced Artificial Intelligence",
-  },
-  {
-    title: "Computational Morphology",
-  },
-  {
-    title: "User-Centered Design and Evaluation",
-  },
-  {
-    title: "Applied Regression Analysis",
+    title: "Artificial Intelligence",
   },
   {
     title: "Machine Learning",
     info: 'Official course name: "Topics in Computer Science"'
   },
   {
-    title: "Natural Language Processing",
+    title: "Numerical Linear Algebra",
+  },
+  {
+    title: "Linear Programming",
+  },
+  {
+    title: "Probability",
+  },
+  {
+    title: "Theory of Computation",
   }
 ];
 
