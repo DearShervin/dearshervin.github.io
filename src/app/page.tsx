@@ -12,13 +12,12 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-4 flex justify-center">
             <Image
-              src="/images/profile.jpg"
+              src="images/profile.jpg"
               alt="Student's Picture"
               width={128}
               height={128}
               className="rounded-full shadow-lg"
               data-ai-hint="profile picture"
-              priority
             />
           </div>
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
