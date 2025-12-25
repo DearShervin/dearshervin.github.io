@@ -18,7 +18,7 @@ const projects = [
   {
     title: "PDFCHAP.com",
     description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity. In addition, adding functionallites for calculating prices for the checkout process.",
-    image: "public/images/www.pdfchap.com.jpg",
+    image: "/images/www.pdfchap.com.jpg",
     tags: ["Web Design", "WordPress", "jQuery", "CMS"],
     liveUrl: "#",
     githubUrl: null,
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "ECB.ir",
     description: "Various contirbutions to News and Blogs and Learn pages such as desiging layouts, writing Learn posts and blogs.",
-    image: "public/images/www.ecb.ir.jpg",
+    image: "/images/www.ecb.ir.jpg",
     tags: ["DNN", "jQuery", "CMS", "UI/UX", ".NET"],
     liveUrl: "https://www.ecb.ir/",
     githubUrl: null,
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "ZANDPERFUMES.com",
     description: "Built a high-performance e-commerce site with a focus on scalability and user engagement. Integrated various third-party services for payments and shipping.",
-    image: "public/images/www.zandperfumes.com.jpg",
+    image: "/images/www.zandperfumes.com.jpg",
     tags: ["Web Design", "WordPress", "jQuery", "CMS"],
     liveUrl: "https://www.zandperfumes.com/",
     githubUrl: null,
@@ -50,35 +50,35 @@ const presentations = [
         subject: "Docker",
         description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
         details: "Presented at SRBIAU (English)",
-        downloadLink: "public/pdfs/Docker Presentation.pdf"
+        downloadLink: "/pdfs/Docker-Presentation.pdf"
     },
     {
         course: "Artificial Intelligence",
         subject: "8-Queen Problem",
         description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems.",
         details: "Presented at SRBIAU (English)",
-        downloadLink: "public/pdfs/8-Queen Presentation.pdf"
+        downloadLink: "/pdfs/8-Queen Presentation.pdf"
     },
     {
         course: "Networking",
         subject: "Domain Name System (DNS)",
         description: "An in-depth look at the Domain Name System (DNS), explaining its hierarchical structure, resolution process, and critical role in internet infrastructure.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "public/pdfs/DNS.pdf"
+        downloadLink: "/pdfs/DNS.pdf"
     },
     {
         course: "Computer Systems",
         subject: "Cryptography",
         description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "public/pdfs/Cryptography-Computer Systems.pdf"
+        downloadLink: "/pdfs/Cryptography-Computer Systems.pdf"
     },
     {
         course: "Basics of Matrices and Linear Algebra",
         subject: "Proof of Theory",
         description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "public/pdfs/Proof of Theory-Basics of Matrices and Linear Algebra.pdf"
+        downloadLink: "/pdfs/Proof of Theory-Basics of Matrices and Linear Algebra.pdf"
     },
     {
         course: "Linear Algebra",
@@ -92,14 +92,14 @@ const presentations = [
         subject: "Proof of Theories",
         description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "public/pdfs/Proof of Theory-Algebra Presentation.pdf"
+        downloadLink: "/pdfs/Proof of Theory-Algebra Presentation.pdf"
     },
     {
         course: "Intro to Combinations",
         subject: "Proof of Theories",
         description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations.",
         details: "Presented at SRBIAU (Persian)",
-        downloadLink: "public/pdfs/Catalan Numbers-Algebra.pdf"
+        downloadLink: "/pdfs/Catalan Numbers-Algebra.pdf"
     }
 ]
 

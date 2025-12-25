@@ -49,6 +49,8 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
+      // Note: It's generally better to handle form submissions on the backend
+      // to keep your endpoint URL private.
       const response = await fetch("https://formspree.io/f/xnjaykaq", {
         method: "POST",
         headers: {
