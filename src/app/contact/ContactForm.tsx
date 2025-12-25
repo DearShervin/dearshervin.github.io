@@ -118,7 +118,7 @@ export function ContactForm() {
               <FormLabel>Your Message</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell me how I can help..."
+                  placeholder="Feel free to Email me..."
                   className="min-h-[120px]"
                   {...field}
                 />

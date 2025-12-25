@@ -6,14 +6,14 @@ const contactDetails = [
   {
     icon: <Mail className="h-6 w-6 text-accent" />,
     label: "Email",
-    value: "your-email@example.com",
-    href: "mailto:your-email@example.com",
+    value: "sherviniranaghideh@gmail.com",
+    href: "mailto:sherviniranaghideh@gmail.com",
   },
   {
     icon: <Github className="h-6 w-6 text-accent" />,
     label: "GitHub",
-    value: "github.com/your-username",
-    href: "https://github.com/your-username",
+    value: "github.com/dearshervin",
+    href: "https://github.com/dearshervin",
   },
 ];
 
