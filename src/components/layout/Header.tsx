@@ -26,20 +26,23 @@ export default function Header() {
     setIsClient(true);
   }, []);
 
-  const NavLink = ({ href, label }: { href: string; label: string }) => (
-    <Link
-      href={href}
-      className={cn(
-        "text-sm font-medium transition-colors hover:text-primary",
-        isClient && pathname === href
-          ? "text-accent font-semibold"
-          : "text-muted-foreground"
-      )}
-      onClick={() => setIsMobileMenuOpen(false)}
-    >
-      {label}
-    </Link>
-  );
+  const NavLink = ({ href, label }: { href: string; label: string }) => {
+    const isActive = isClient && pathname === href;
+    return (
+      <Link
+        href={href}
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary",
+          isActive
+            ? "text-accent font-semibold"
+            : "text-muted-foreground"
+        )}
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
+        {label}
+      </Link>
+    );
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
