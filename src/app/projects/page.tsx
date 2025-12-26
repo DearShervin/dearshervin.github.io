@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Python Music Suggestor",
     description: "Made an application with Python programming language called Music Suggester that suggests songs to users based on their taste after they choose a list of answers.",
-    image: "https://placehold.co/600x400.png",
+    image: "/images/musicsuggestor.png",
     tags: ["Python", "Algorithms", "Object-Oriented Programming (OOP)"],
     liveUrl: null,
     githubUrl: null,
@@ -55,7 +55,7 @@ const presentations = [
     {
         course: "Artificial Intelligence",
         subject: "8-Queen Problem",
-        description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems.",
+        description: "A presentation on solving the classic 8-Queen puzzle using various AI search algorithms to illustrate constraint satisfaction problems. Various Algorithms explained such as Hill Climbing, Brute Force Search, Backtracking, Genetic Algorithms\n and Simulated Annealing.",
         details: "Presented at SRBIAU (English)",
         downloadLink: "/pdfs/8-Queen Presentation.pdf"
     },
@@ -69,35 +69,35 @@ const presentations = [
     {
         course: "Computer Systems",
         subject: "Cryptography",
-        description: "This presentation covers the fundamental principles of cryptography, including symmetric and asymmetric encryption, hash functions, and their applications in securing computer systems.",
+        description: "A presentation about Cryptography from it's history to some algorithms used in the subject.",
         details: "Presented at SRBIAU (Persian)",
         downloadLink: "/pdfs/Cryptography-Computer Systems.pdf"
     },
     {
         course: "Basics of Matrices and Linear Algebra",
-        subject: "Proof of Theory",
-        description: "A theoretical exploration of fundamental matrix and linear algebra concepts, complete with formal proofs of key theorems.",
+        subject: "Proof of Theories",
+        description: "Proof of two Theories in Linear Algebra, delivered in the form of a presentation.",
         details: "Presented at SRBIAU (Persian)",
         downloadLink: "/pdfs/Proof of Theory-Basics of Matrices and Linear Algebra.pdf"
     },
     {
         course: "Linear Algebra",
         subject: "Applications in Machine Learning",
-        description: "Discusses the practical applications of linear algebra in machine learning, covering topics like dimensionality reduction with PCA and its role in neural networks.",
+        description: "Discusses the practical applications of linear algebra in machine learning.",
         details: "Presented at SRBIAU (Persian)",
         downloadLink: "/pdfs/Linear-Algebra-ML-Applications.pdf"
     },
     {
         course: "Algebra",
-        subject: "Proof of Theories",
-        description: "A deep dive into abstract algebra, presenting formal proofs for foundational theories and structures.",
+        subject: "Proof of Theory",
+        description: "Proof a theory in Algebra delivered in the form of a presentation.",
         details: "Presented at SRBIAU (Persian)",
         downloadLink: "/pdfs/Proof of Theory-Algebra Presentation.pdf"
     },
     {
         course: "Intro to Combinations",
         subject: "Proof of Theories",
-        description: "An introductory presentation on combinatorial mathematics, including proofs for core principles of permutations and combinations.",
+        description: "Proof of two theories combinatorial mathematics delivered in the form of a presentation.",
         details: "Presented at SRBIAU (Persian)",
         downloadLink: "/pdfs/Catalan Numbers-Algebra.pdf"
     }

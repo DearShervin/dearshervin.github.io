@@ -16,8 +16,8 @@ const researchPapers = [
     supervisor: "Dr. Farhad Hosseinzadeh Lotfi",
     supervisorLink: "https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en",
     description: "Mathematical modeling of Multi-commodity Transportation Problems (MCTP). I explained a method for solving MCTP using SciPy in Python and developed a program with a simple UI to solve these problems. The tool is deployed on Hugging Face Spaces for a live demo using the Gradio Python library.",
-    demoUrl: "#",
-    pdfUrl: "#",
+    demoUrl: "https://huggingface.co/spaces/DearShevin/MCTP_Gradio",
+    pdfUrl: "/pdfs/Solving_MCTP.pdf",
     date: "Spring 2023",
   },
   {

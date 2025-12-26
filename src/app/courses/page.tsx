@@ -47,7 +47,7 @@ export default function CoursesPage() {
         <h2 className="font-headline mb-8 text-3xl font-semibold">
           Syllabus Download
         </h2>
-        <p className="text-muted-foreground mb-6">Download a PDF containing all course syllabi.</p>
+        <p className="text-muted-foreground mb-6">Download a PDF containing all courses' syllabi.</p>
         <Button asChild size="lg">
           <a href={allSyllabiLink} download>
             <Download className="mr-2 h-5 w-5" />
