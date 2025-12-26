@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -67,7 +68,14 @@ export default function Header() {
                 </SheetHeader>
               <div className="p-4">
                 <Link href="/" className="flex items-center gap-2 mb-8">
-                    <BookUser className="h-6 w-6 text-accent" />
+                  <Image
+                      src="/images/logo.png"
+                      alt="Shervin Logo"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                      priority
+                  />
                     <span className="font-headline text-lg font-bold">Shervin's Portfolio</span>
                 </Link>
                 <nav className="flex flex-col gap-6">
