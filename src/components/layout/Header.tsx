@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { Menu, BookUser } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,9 +21,14 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const NavLink = ({ href, label }: { href: string; label: string }) => {
-    const isActive = pathname === href;
+    const isActive = isClient && pathname === href;
   
     return (
       <Link
@@ -68,14 +73,7 @@ export default function Header() {
                 </SheetHeader>
               <div className="p-4">
                 <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image
-                      src="/images/logo.png"
-                      alt="Shervin Logo"
-                      width={24}
-                      height={24}
-                      className="object-contain"
-                      priority
-                  />
+                  <Image src="/images/logo.png" alt="Logo" width={24} height={24} className="h-6 w-6 text-accent" />
                     <span className="font-headline text-lg font-bold">Shervin's Portfolio</span>
                 </Link>
                 <nav className="flex flex-col gap-6">
