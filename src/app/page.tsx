@@ -25,22 +25,7 @@ export default function Home() {
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             Welcome to my portfolio. I am an aspiring prospective graduate student and I am highly looking forward to conduct research related to areas of my interest.
           </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Button asChild size="lg">
-              <Link href="/experience">
-                More About Me <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-             <Button asChild variant="outline" size="lg">
-              <a href="/pdfs/Shervin-Iranaghideh-CV.pdf" download>
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/contact">Get In Touch</Link>
-            </Button>
-          </div>
+
         </div>
       </section>
 
@@ -91,6 +76,22 @@ export default function Home() {
             <p className="text-lg text-muted-foreground leading-relaxed">
             I graduated from Islamic Azad University Science and Research Branch (SRBIAU) with a Bachelor's degree in Computer Science. Throughout my academic career, I've been driven by a curiosity to solve complex problems and a desire to contribute to the academic community. I'm always eager to collaborate on innovative projects.
             </p>
+        </div>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <Button asChild size="lg">
+            <Link href="/experience">
+              More About Me <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="lg">
+            <a href="/pdfs/Shervin-Iranaghideh-CV.pdf" download>
+              <Download className="mr-2 h-5 w-5" />
+              Download CV
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="lg">
+            <Link href="/contact">Get In Touch</Link>
+          </Button>
         </div>
       </section>
     </div>

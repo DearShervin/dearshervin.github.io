@@ -21,12 +21,16 @@ const researchPapers = [
     date: "Spring 2023",
   },
   {
-    title: "Are Memory Networks actually interpretable?",
-    description: "Core idea: Memory Networks produce attention over sentences across hops. People often treat this as “explanations.” Test whether that’s true.",
+    title: "DistilBERT vs MiniLM for AG News Topic \n" +
+        "Classification: Accuracy–Efficiency Trade-offs in \n" +
+        "Fine-Tuning ",
+    description: "This paper evaluates the effectiveness and efficiency of fine-tuning small pretrained transformer models for news topics \n" +
+        "classification. Using the AG News dataset, we fine-tune and compare DistilBERT (distilbert-base-uncased) and MiniLM \n" +
+        "(microsoft/MiniLM-L12-H384-uncased) under the same training configuration.",
     supervisor: "Dr. Tofigh Allahviranloo",
     supervisorLink: "https://scholar.google.com/citations?user=HjHkaiwAAAAJ&hl=en",
     date: "Fall 2024",
-    downloadLink: "#"
+    downloadLink: "/pdfs/DistilBERT vs MiniLM for AG News Topic Classification_ Accuracy–Efficiency Trade-offs in Fine-Tuning.pdf"
   },
 ];
 
