@@ -25,7 +25,6 @@ export default function Home() {
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             Welcome to my portfolio. I am an aspiring prospective graduate student and I am highly looking forward to conduct research related to areas of my interest.
           </p>
-
         </div>
       </section>
 
