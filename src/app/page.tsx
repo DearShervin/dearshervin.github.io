@@ -73,7 +73,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-headline text-3xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-            I graduated from Islamic Azad University Science and Research Branch (SRBIAU) with a Bachelor's degree in Computer Science. Throughout my academic career, I've been driven by a curiosity to solve complex problems and a desire to contribute to the academic community. I'm always eager to collaborate on innovative projects.
+            I graduated from Islamic Azad University Science and Research Branch (SRBIAU) with a Bachelor's degree in Computer Science. Throughout my academic career, I've been driven by a curiosity to learn subjects deeply and a desire to contribute to the academic community and to bring my ideas to the table. I'm always eager to collaborate on innovative projects.
             </p>
         </div>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
