@@ -29,7 +29,7 @@ const researchPapers = [
         "(microsoft/MiniLM-L12-H384-uncased) under the same training configuration.",
     supervisor: "Dr. Tofigh Allahviranloo",
     supervisorLink: "https://scholar.google.com/citations?user=HjHkaiwAAAAJ&hl=en",
-    date: "Fall 2024",
+    date: "Fall 2023",
     downloadLink: "/pdfs/DistilBERT vs MiniLM for AG News Topic Classification_ Accuracy–Efficiency Trade-offs in Fine-Tuning.pdf"
   },
 ];
@@ -62,18 +62,18 @@ const teachingExperiences = [
 ];
 
 const workExperiences = [
-    {
-        role: "Front-End Developer Intern",
-        company: "ECB.ir",
-        duration: "Summer 2023",
-        description: "Gained hands-on experience with modern development tools and workflows. Contributed to deploying new features and learned to navigate a professional codebase in an agile environment."
-    },
-    {
-      role: "Front-end Designer",
+  {
+      role: "Front-end Developer",
       company: "ECB.ir",
       duration: "Summer 2024 - Now",
       description: "Designed and developed user-centric interfaces for diverse web projects, including a high-performance e-commerce site and feature-rich platforms with WordPress and CMS like DNN. Focused on creating responsive, scalable, and intuitive user experiences."
-  }
+  },  
+  {
+        role: "Front-End Designer Intern",
+        company: "ECB.ir",
+        duration: "Summer 2023",
+        description: "Gained hands-on experience with modern development tools and workflows. Contributed to deploying new features and learned to navigate a professional codebase in an agile environment."
+    }
 ]
 
 export default function ExperiencePage() {
