@@ -62,13 +62,13 @@ const teachingExperiences = [
 ];
 
 const workExperiences = [
-    {
-        role: "Front-end Developer",
-        company: "ECB.ir",
-        duration: "Summer 2024 - Now",
-        description: "Designed and developed user-centric interfaces for diverse web projects, including a high-performance e-commerce site and feature-rich platforms with WordPress and CMS like DNN. Focused on creating responsive, scalable, and intuitive user experiences."
-    },
-    {
+  {
+      role: "Front-end Developer",
+      company: "ECB.ir",
+      duration: "Summer 2024 - Now",
+      description: "Designed and developed user-centric interfaces for diverse web projects, including a high-performance e-commerce site and feature-rich platforms with WordPress and CMS like DNN. Focused on creating responsive, scalable, and intuitive user experiences."
+  },  
+  {
         role: "Front-End Designer Intern",
         company: "ECB.ir",
         duration: "Summer 2023",

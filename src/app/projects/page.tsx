@@ -10,7 +10,7 @@ const projects = [
     title: "PDFCHAP.com",
     description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity. In addition, adding functionallites for calculating prices for the checkout process.",
     image: "/images/www.pdfchap.com.jpg",
-    tags: ["Web Design", ".Net", "DNN", "jQuery"],
+    tags: ["Web Design", "WordPress", "jQuery", "CMS"],
     liveUrl: "#",
     githubUrl: null,
     imageHint: "web development"
@@ -33,15 +33,15 @@ const projects = [
     githubUrl: null,
     imageHint: "online store"
   },
-    {
-        title: "Python Music Suggestor",
-        description: "Made an application with Python programming language called Music Suggester that suggests songs to users based on their taste after they choose a list of answers.",
-        image: "/images/musicsuggestor.png",
-        tags: ["Python", "Algorithms", "Object-Oriented Programming (OOP)"],
-        liveUrl: null,
-        githubUrl: null,
-        imageHint: "music playlist"
-    },
+  {
+    title: "Python Music Suggestor",
+    description: "Made an application with Python programming language called Music Suggester that suggests songs to users based on their taste after they choose a list of answers.",
+    image: "/images/musicsuggestor.png",
+    tags: ["Python", "Algorithms", "Object-Oriented Programming (OOP)"],
+    liveUrl: null,
+    githubUrl: null,
+    imageHint: "music playlist"
+  },
 ];
 
 const presentations = [
