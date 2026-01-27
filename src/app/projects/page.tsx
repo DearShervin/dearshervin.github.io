@@ -11,7 +11,7 @@ const projects = [
     description: "Designed and developed a modern, responsive website for a client. Focused on creating an intuitive user experience and a clean aesthetic that aligned with the company's brand identity. In addition, adding functionallites for calculating prices for the checkout process.",
     image: "/images/www.pdfchap.com.jpg",
     tags: ["Web Design", "WordPress", "jQuery", "CMS"],
-    liveUrl: "#",
+    liveUrl: "https://www.pdfchap.com/",
     githubUrl: null,
     imageHint: "web development"
   },

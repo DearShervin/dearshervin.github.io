@@ -5,23 +5,23 @@ import { Badge } from "@/components/ui/badge";
 const skillCategories = [
   {
     icon: <BrainCircuit className="h-8 w-8 text-accent" />,
-    title: "Programming & Data Science",
-    skills: ["Python", "Scikit-Learn", "TensorFlow", "PyTorch", "NumPy", "Pandas", "Matplotlib", "C/C++", "MATLAB", "R", "Go"],
+    title: "Programming Languages & Data Science",
+    skills: ["Python", "JavaScript", "LaTeX", "Go", "PyTorch", "TensorFlow", "Scikit-Learn", "NumPy", "Pandas", "Matplotlib", "C/C++", "spaCy", "NLTK", "SciPy"],
   },
   {
     icon: <Laptop className="h-8 w-8 text-accent" />,
     title: "Web Development",
-    skills: ["TypeScript", "Javascript", "HTML", "CSS", "Next.js", "React", "WordPress", "DNN"],
+    skills: ["TypeScript", "Javascript",  "Next.js", "React", "DotNetNuke (DNN)", "WordPress", "HTML", "CSS", "GSAP"],
   },
   {
     icon: <Wrench className="h-8 w-8 text-accent" />,
     title: "Developer Tools",
-    skills: ["Git", "Docker", "Excel", "PowerPoint", "Plesk"],
+    skills: ["Git", "Docker", "Google Colaboratory", "Jupyter Notebook", "JebBrains IDEs (WebStorm, PyCharm)", "Plesk"],
   },
   {
     icon: <PenTool className="h-8 w-8 text-accent" />,
     title: "Design Tools",
-    skills: ["Illustrator", "Figma", "Photoshop", "Premier Pro"],
+    skills: ["Figma", "Adobe Premier Pro", "Adobe Illustrator"],
   },
 ];
 
