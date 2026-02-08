@@ -15,7 +15,7 @@ const courses = [
               href="https://github.com/DearShervin/ML_Course_Assignments"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary underline hover:text-primary/80"
+              className="text-secondary underline hover:text-secondary/80"
           >
             Assignments
           </a>
