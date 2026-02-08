@@ -8,11 +8,19 @@ const courses = [
   },
   {
     title: "Machine Learning",
-    info: 'Official course name: "Topics in Computer Science"',
-    assignments: {
-      title: "Assignments",
-      url: "https://github.com/DearShervin/ML_Course_Assignments",
-    },
+    info: (
+        <>
+          Official course name: "Topics in Computer Science" ·{" "}
+          <a
+              href="https://github.com/DearShervin/ML_Course_Assignments"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline hover:text-primary/80"
+          >
+            Assignments
+          </a>
+        </>
+    ),
   },
   {
     title: "Data Structures and Algorithms",
