@@ -48,7 +48,7 @@ const presentations = [
     {
         course: "Operating Systems",
         subject: "Docker",
-        description: "An overview of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
+        description: "An in-depth view of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
         details: "Presented at SRBIAU (English)",
         downloadLink: "/pdfs/Docker-Presentation.pdf"
     },

@@ -8,16 +8,38 @@ const courses = [
   },
   {
     title: "Machine Learning",
-    info: 'Official course name: "Topics in Computer Science"'
+    info: 'Official course name: "Topics in Computer Science"',
+    assignments: {
+      title: "Assignments",
+      url: "https://github.com/DearShervin/ML_Course_Assignments",
+    },
+  },
+  {
+    title: "Data Structures and Algorithms",
+  },
+  {
+    title: "Linear Algebra",
   },
   {
     title: "Numerical Linear Algebra",
   },
   {
+    title: "Numerical Analysis",
+  },
+  {
     title: "Linear Programming",
   },
   {
-    title: "Probability",
+    title: "Probability 1",
+  },
+  {
+    title: "Principles of Operating Systems",
+  },
+  {
+    title: "Compiler",
+  },
+  {
+    title: "Logic and Set Theory",
   },
   {
     title: "Theory of Computation",
