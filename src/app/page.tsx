@@ -40,7 +40,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Machine Learning</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Fascinated by building intelligent systems that learn from data to make predictions and decisions.</p>
+                <p className="text-muted-foreground">Fascinated by building intelligent systems that learn from data and make predictions and decisions.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
@@ -51,7 +51,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Natural Language Processing</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Exploring how computers can be taught to process and understand human language to bridge the communication gap.</p>
+                <p className="text-muted-foreground">Interested in creating domain-specific, efficient, resource-friendly NLP systems that perform close to state-of-the-art models.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
