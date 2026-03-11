@@ -46,6 +46,13 @@ const projects = [
 
 const presentations = [
     {
+        course: "Graph Theory and Applications",
+        subject: "Kruskal’s Algorithm",
+        description: "Presentation explaining Kruskal’s Algorithm for finding a Minimum Spanning Tree in weighted graphs, covered the greedy approach, step-by-step process, and computational complexity.",
+        details: "Presented at SRBIAU (English)",
+        downloadLink: "/pdfs/Kruskal’s-Algorithm.pdf"
+    },
+    {
         course: "Operating Systems",
         subject: "Docker",
         description: "An in-depth view of containerization technology using Docker, covering its core concepts, architecture, and benefits in modern software deployment.",
